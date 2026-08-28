@@ -1,4 +1,10 @@
-## **🦀 unsafe-calc**
+# **🦀 unsafe-calc**
+
+<img src="https://github.com/ulsidae/unsafe-calc/blob/main/img/1.jpg" height="200" /> <img src="https://github.com/ulsidae/unsafe-calc/blob/main/img/2.jpg" height="200" /> <img src="https://github.com/ulsidae/unsafe-calc/blob/main/img/3.jpg" height="200" />
+
+🔗 [GitHub Pages](https://ulsidae.github.io/unsafe-calc/)
+
+---
 
 > Could I have used `Vec`? Absolutely. Did I? No.
 
@@ -11,6 +17,8 @@ A small scientific calculator rewritten in Rust and compiled to WebAssembly.
 It started as a simple experiment to learn Rust.
 
 It somehow ended up with a custom `unsafe` stack, raw pointers, and manual memory management.
+
+---
 
 **Origin**
 
