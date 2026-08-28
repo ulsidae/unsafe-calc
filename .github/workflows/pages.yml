@@ -29,9 +29,8 @@ jobs:
           target: wasm32-unknown-unknown
 
       - name: Install wasm-pack
-        uses: jetli/wasm-pack@v0.4.0
-        with:
-          version: latest
+        run: |
+          curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 
       - name: Build WASM
         run: wasm-pack build --target web --release
