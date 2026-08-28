@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="unsafe-calc — A scientific calculator written in Rust and WebAssembly."
+    >
+
+    <title>unsafe-calc 🦀</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<main class="calculator">
+
+    <header>
+        <h1>by ulsidae</h1>
+
+        <span id="mode">DEG</span>
+    </header>
+
+    <section class="display">
+
+        <input
+            id="expression"
+            type="text"
+            placeholder="Enter expression..."
+            autocomplete="off"
+            spellcheck="false"
+        >
+
+        <div id="result">0</div>
+
+    </section>
+
+    <section class="controls">
+
+        <button data-action="mode">
+            DEG/RAD
+        </button>
+
+        <button data-action="memory-clear">
+            MC
+        </button>
+
+        <button data-action="memory-recall">
+            MR
+        </button>
+
+        <button data-action="memory-add">
+            M+
+        </button>
+
+        <button data-action="memory-sub">
+            M-
+        </button>
+
+    </section>
+
+    <section class="buttons">
+
+        <button data-value="sin(">sin</button>
+        <button data-value="cos(">cos</button>
+        <button data-value="tan(">tan</button>
+        <button data-value="asin(">asin</button>
+        <button data-value="acos(">acos</button>
+
+        <button data-value="log(">log</button>
+        <button data-value="ln(">ln</button>
+        <button data-value="sqrt(">√</button>
+        <button data-value="^">xʸ</button>
+        <button data-value="!">!</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="/">÷</button>
+        <button data-action="clear">AC</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="*">×</button>
+        <button data-value="(">(</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="-">−</button>
+        <button data-value=")">)</button>
+
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button data-value="pi">π</button>
+        <button data-value="e">e</button>
+        <button data-value="+">+</button>
+
+        <button data-value="ANS">ANS</button>
+        <button data-action="backspace">⌫</button>
+
+        <button
+            class="equals"
+            data-action="calculate"
+        >
+            =
+        </button>
+
+    </section>
+
+</main>
+
+<script type="module" src="./main.js"></script>
+
+</body>
+</html>
